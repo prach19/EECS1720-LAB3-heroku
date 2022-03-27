@@ -48,7 +48,7 @@ document.querySelector('.create').addEventListener('click', function(){
                 //adding the icons/buttons
                 newItemsHTML += `<li data-itemindex="${i}" ${status}>
                 <span class="item">${itemsArray[i].item}</span> 
-                <div><span class="itemDelete"> <img src="/assets/heart.png" alt= "love" width = 30px height = 30px> </span></div>
+                <div><span class="heart"> <img src="./assets/heart.png" alt= "love" width = 30px height = 30px> </span></div>
                 </li>`;
             }
             itemsList.innerHTML = newItemsHTML;
@@ -57,9 +57,9 @@ document.querySelector('.create').addEventListener('click', function(){
             var itemsListUL = document.querySelectorAll('ul li');
             for (var i = 0; i < itemsArray.length; i++) {
     
-                itemsListUL[i].querySelector('.itemDelete').addEventListener('click', function(){
+                itemsListUL[i].querySelector('.heart').addEventListener('click', function(){
                     var index = this.parentNode.parentNode.dataset.itemindex;
-                    itemDelete(index);
+                    heart(index);
                 });
             }
             } catch(e) {     
@@ -67,7 +67,7 @@ document.querySelector('.create').addEventListener('click', function(){
     }
 
     //function for deleted items
-    function itemDelete(index){
+    function heart(index){
         var itemsStorage = localStorage.getItem('items');
         if(itemsStorage == null){
             itemsStorage = '[]';
