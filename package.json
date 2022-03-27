@@ -1,7 +1,7 @@
 {
   "name": "eecs1720-lab3-heroku",
   "version": "1.0.0",
-  "description": "",
+  "description": "good morning user",
   "main": "list.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
