@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/prach19/EECS1720-LAB3-heroku/issues"
   },
-  "homepage": "https://github.com/prach19/EECS1720-LAB3-heroku#readme"
+  "homepage": "https://github.com/prach19/EECS1720-LAB3-heroku#readme",
+  "engines": {
+    "node": "16.13.2"
+  }
+  
 }
