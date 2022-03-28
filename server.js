@@ -10,7 +10,7 @@ app.get('/', (req, res) => {
     .end();
 });
  
-// Start the server
+// start the server
 const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => {
   console.log(`App listening on port ${PORT}`);
